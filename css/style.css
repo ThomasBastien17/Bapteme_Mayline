@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Miss+Fajardose&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(f, f, f, 0.5);
+  background-image: url(../images/espace-de-copie-de-fond-de-fleurs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  height: 5rem;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10rem);
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+.card p.card-text {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-size: 8rem;
+  font-family: "Corinthia", cursive;
+  margin-bottom: 2rem;
+}
+
+img {
+  height: 500px;
+}
+
+.card-date {
+  font-family: "Corinthia", cursive;
+  font-size: 2rem;
+}
+
+footer p {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  border-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
