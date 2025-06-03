@@ -41,6 +41,8 @@ h2 {
   font-size: 8rem;
   font-family: "Corinthia", cursive;
   margin-bottom: 2rem;
+  color:#fecdd3;
+  text-shadow: 1px 1px 5px #000; 
 }
 
 img {
@@ -49,7 +51,10 @@ img {
 
 .card-date {
   font-family: "Corinthia", cursive;
-  font-size: 2rem;
+  font-size: 5rem;
+  color: #fecdd3;
+  text-shadow: 1px 1px 5px #000;
+
 }
 
 footer p {
