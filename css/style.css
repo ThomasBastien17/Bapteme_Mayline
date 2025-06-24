@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,7 +24,7 @@ ul {
   justify-content: center;
 }
 
-.card{
+.card {
   height: calc(100vh - 15rem);
   width: 60%;
   margin: 5rem auto 5rem auto;
@@ -33,7 +33,8 @@ ul {
   border-radius: 2rem;
   padding: 2rem;
 }
-.card-home{
+
+.card-home {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -42,21 +43,21 @@ ul {
   padding: 2rem;
   line-height: 1.5rem;
 }
-.card-invitation{
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-.card-invitation-text{
+
+.card-invitation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 1.2rem;
+  padding: 2rem;
 }
-img{
+
+.card-invitation-text p {
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+img {
   width: 60%;
   margin-bottom: 1rem;
   border-radius: 50%;
@@ -66,8 +67,8 @@ h2 {
   font-size: 8rem;
   font-family: "Corinthia", cursive;
   margin-bottom: 2rem;
-  color:#d5e7d4;
-  text-shadow: 1px 1px 5px #000; 
+  color: #d5e7d4;
+  text-shadow: 1px 1px 5px #000;
 }
 
 footer p {
@@ -82,9 +83,44 @@ footer p {
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.glass-link{
+
+.glass-link {
   text-decoration: none;
   color: #d5e7d4;
   text-shadow: 1px 1px 5px #000;
   font-weight: bold;
+}
+strong{
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 5rem;
+  }
+
+  .card {
+    height: calc(100vh - 9rem);
+    width: 90%;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  img {
+    width: 90%;
+    border-radius: 50%;
+    margin: 3rem 0;
+  }
+
+  .card-home {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .card-invitation {
+    padding: 1rem;
+  }
 }
