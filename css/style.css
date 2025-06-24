@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Miss+Fajardose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 * {
 box-sizing: border-box;
@@ -6,10 +7,10 @@ box-sizing: border-box;
 
 body {
   background-color: rgba(f, f, f, 0.5);
-  background-image: url(../images/espace-de-copie-de-fond-de-fleurs.jpg);
+  background-image: url(../images/espace-vide-pour-l-ecriture-de-texte-avec-une-fleur-de-gypsophile-blanche-fraiche-sur-fond-rose.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 header {
@@ -24,37 +25,49 @@ ul {
 }
 
 .card{
+  height: calc(100vh - 15rem);
+  width: 60%;
+  margin: 5rem auto 5rem auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.card-home{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+.card-invitation{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.card-invitation-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 10rem);
-  width: 60%;
-  margin: 0 auto;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
 }
-.card p.card-text {
-  margin-top: 1.5rem;
+img{
+  width: 60%;
+  margin-bottom: 1rem;
+  border-radius: 50%;
 }
 
 h2 {
   font-size: 8rem;
   font-family: "Corinthia", cursive;
   margin-bottom: 2rem;
-  color:#fecdd3;
+  color:#d5e7d4;
   text-shadow: 1px 1px 5px #000; 
-}
-
-img {
-  height: 500px;
-}
-
-.card-date {
-  font-family: "Corinthia", cursive;
-  font-size: 5rem;
-  color: #fecdd3;
-  text-shadow: 1px 1px 5px #000;
-
 }
 
 footer p {
@@ -68,4 +81,10 @@ footer p {
   border-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.glass-link{
+  text-decoration: none;
+  color: #d5e7d4;
+  text-shadow: 1px 1px 5px #000;
+  font-weight: bold;
 }
