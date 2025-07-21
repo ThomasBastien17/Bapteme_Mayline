@@ -8,7 +8,7 @@ const corinthia = Corinthia({
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-start h-[100dvh]">
+    <main className="flex flex-col items-center justify-start h-[100dvh] overflow-hidden">
       <section className="h-2/3">
         <Image
           src="/Mayline.jpg"
