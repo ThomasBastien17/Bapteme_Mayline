@@ -33,9 +33,9 @@ export default function Home() {
           <Image
             src="/croix.png"
             alt="Croix"
-            width={100}
-            height={100}
-            className="relative -top-[33px] "
+            width={60}
+            height={60}
+            className="relative -top-[20px]"
             style={{
               filter:
                 "invert(96%) sepia(31%) saturate(1482%) hue-rotate(291deg) brightness(95%) contrast(75%)",
