@@ -54,7 +54,7 @@ export default function Home() {
             <div className="flex flex-col items-center border-b border-[#d6a8a7] w-full">
               <p className="flex items-center justify-center text-lg uppercase h-10">église de salernes</p>
             </div>
-            <div className="flex flex-col items-center border-b border-[#d6a8a7] w-full">
+            <div className="flex flex-col items-center w-full">
               <p className="flex items-center justify-center text-sm h-10">Puis réception à Vidauban</p>
             </div>
           </div>
