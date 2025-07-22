@@ -1,10 +1,14 @@
 "use client";
 
 import Header from "@/components/Header";
-import LeafletMap from "@/components/LeafletMap";
 import MenuBurger from "@/components/MenuBurger";
 import { Corinthia } from "next/font/google";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
+  ssr: false,
+});
 
 const corinthia = Corinthia({ weight: ["400", "700"], subsets: ["latin"] });
 
