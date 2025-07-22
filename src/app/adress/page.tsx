@@ -49,7 +49,7 @@ export default function Adress() {
           onClick={() => setIsOpen(false)}
         />
       )}
-      <main className="min-h-screen flex flex-col items-center justify-center gap-8 bg-gray-50 p-6">
+      <main className="min-h-screen flex flex-col items-center justify-center gap-8 bg-red-50 p-6">
         <h2 className={`text-5xl text-center p-4 ${corinthia.className} font-semibold text-[#d6a8a7]`}>Adresses</h2>
         {markers.map(({ lat, lng, label, type }, index) => (
           <div key={index} className="w-full max-w-3xl h-150 border-2 border-gray-300 rounded-lg shadow-md overflow-hidden">

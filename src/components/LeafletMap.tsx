@@ -44,7 +44,7 @@ export default function LeafletMap({ markers, zoom = 14 }: LeafletMapProps) {
   };
 
   return (
-    <MapContainer center={center} zoom={zoom} scrollWheelZoom={false} className="w-full h-full border-2 border-gray-300">
+    <MapContainer key={JSON.stringify(center)} center={center} zoom={zoom} scrollWheelZoom={false} className="w-full h-full border-2 border-gray-300">
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
