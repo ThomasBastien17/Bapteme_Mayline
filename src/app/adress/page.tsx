@@ -14,6 +14,9 @@ const corinthia = Corinthia({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function Adress() {
   const [isOpen, setIsOpen] = useState(false);
+  const mapsUrls = [`https://www.google.com/maps/place/Eglise+Saint+Pierre/@43.5636968,6.2321856,19.25z`,
+    `https://www.google.com/maps/@43.4253063,6.4464559,3a,75y,248.21h,79.48t`,
+    `https://www.google.com/maps/place//@43.4271922,6.4453659,3a,75y,52.59h,72.26t`];
   const markers: {
     lat: number;
     lng: number;
@@ -38,7 +41,8 @@ export default function Adress() {
         label: "Parking",
         type: "parking",
       },
-    ]
+    ];
+
   return (
     <div className="flex flex-col min-h-screen relative">
       <Header onOpenMenu={() => setIsOpen(true)} />
@@ -53,7 +57,7 @@ export default function Adress() {
         <h2 className={`text-5xl text-center p-4 ${corinthia.className} font-semibold text-[#d6a8a7]`}>Adresses</h2>
         {markers.map(({ lat, lng, label, type }, index) => (
           <div key={index} className="w-full max-w-3xl h-150 border-2 border-gray-300 rounded-lg shadow-md overflow-hidden">
-            <h3 className="text-center font-semibold text-md text-[#d6a8a7] text-shadow-s p-2 bg-red-100">{label}</h3>
+            <h3 className="text-center font-semibold text-md text-[#d6a8a7] text-shadow-s p-2 bg-red-100"><a href={mapsUrls[index]} target="_blank" rel="noopener noreferrer">{label}</a></h3>
             <div className="relative z-0 h-150">
               <LeafletMap markers={[{ lat, lng, label, type }]} zoom={15} />
             </div>
