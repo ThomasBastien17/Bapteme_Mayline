@@ -11,7 +11,7 @@ export default function MenuBurger({ isOpen, onClose }: SidebarProps) {
   return (
     <aside className={`fixed top-0 right-0 w-64 h-full bg-red-50 shadow-lg z-50 flex flex-col transform transition-transform duration-300 p-4 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
       <div className='flex justify-end mb-4'>
-        <X size={28} onClick={onClose} className='text-[#d6a8a7]' />
+        <X size={32} onClick={onClose} className='text-[#d6a8a7]' />
       </div>
       <nav className='flex flex-col space-y-2 justify-center items-center mt-16 text-lg text-[#d6a8a7] text-shadow-s font-semibold'>
         <Link href="/" onClick={onClose} className="block py-2 px-4 hover:bg-gray-200">Accueil</Link>
