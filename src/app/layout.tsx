@@ -26,6 +26,11 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Bapteme Mayline" />
+        <meta property="og:description" content="Bapteme de Mayline" />
+        <meta property="og:image" content="/Mayline.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bapteme-mayline.vercel.app/" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
