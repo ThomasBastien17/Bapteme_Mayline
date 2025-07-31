@@ -16,7 +16,6 @@ export default function MenuBurger({ isOpen, onClose }: SidebarProps) {
       <nav className='flex flex-col space-y-2 justify-center items-center mt-16 text-lg text-[#d6a8a7] text-shadow-s font-semibold'>
         <Link href="/" onClick={onClose} className="block py-2 px-4 hover:bg-gray-200">Accueil</Link>
         <Link href="/info" onClick={onClose} className="block py-2 px-4 hover:bg-gray-200">Infos Utiles</Link>
-        <Link href="/adress" onClick={onClose} className="block py-2 px-4 hover:bg-gray-200">Adresses</Link>
         <Link href="/menu" onClick={onClose} className="block py-2 px-4 hover:bg-gray-200">Menu</Link>
       </nav>
       <div className='absolute top-30 left-0 w-full h-full pointer-events-none z-[-1]'>
